@@ -22,10 +22,12 @@ nav {
 	margin: 0 auto;
 	float: none;
 }
+
 nav ul {
 	display: table-row;
 	margin: 0;
 }
+
 nav ul li {
 	display: table-cell;
 	width: 15%;
