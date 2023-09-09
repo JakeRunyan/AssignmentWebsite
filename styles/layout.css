@@ -9,6 +9,7 @@ body {
     width: 100%;
     max-width: 1020px;
     min-width: 640px;
+    background-color: lightgrey;
 }
 
 body > header > img {
@@ -34,7 +35,14 @@ nav ul li {
 	border-collapse: collapse;
 }
 
+aside {
+    float: right;
+    
+    padding-right: 10px;
+}
+
 footer {
+    clear: both;
     background-color: #0C2D48;
     color: #BFD7ED;
     text-align: center;
