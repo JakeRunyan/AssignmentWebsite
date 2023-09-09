@@ -2,13 +2,25 @@
 
 /**/
 
-nav ul li a , nav ul li a:visited {
+nav ul li a, nav ul li a:visited {
     font-size: 1.2em;
     color: black;
     display: block;
     text-decoration: none;
 }
 
-nav ul li a:active ,nav ul li a:hover {
+nav ul li a:active, nav ul li a:hover {
     background-color: #71d1ea;
+}
+
+article ul > li {
+    font-size: 1.1em;
+}
+
+article ul li a, article ul li a:visited {
+    text-decoration: none;
+}
+
+article ul li a:active, article ul li a:hover {
+    color: lightcoral;
 }
