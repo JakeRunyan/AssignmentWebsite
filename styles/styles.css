@@ -13,14 +13,22 @@ nav ul li a:active, nav ul li a:hover {
     background-color: #71d1ea;
 }
 
-article ul > li {
+article dl {
+    margin-left: 10px;
+}
+
+article dl dt {
+    font-size: 1.2em;
+}
+
+article dl dd {
     font-size: 1.1em;
 }
 
-article ul li a, article ul li a:visited {
+article a, article a:visited {
     text-decoration: none;
 }
 
-article ul li a:active, article ul li a:hover {
+article a:active, article a:hover {
     color: lightcoral;
 }
