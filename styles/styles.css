@@ -23,11 +23,11 @@ article dl {
 }
 
 article dl dt {
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 article dl dd {
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 article a, article a:visited {
