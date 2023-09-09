@@ -27,6 +27,7 @@ article dl dd {
 
 article a, article a:visited {
     text-decoration: none;
+    color: black;
 }
 
 article a:active, article a:hover {
