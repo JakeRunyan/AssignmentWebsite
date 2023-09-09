@@ -24,10 +24,12 @@ article dl {
 
 article dl dt {
     font-size: 1.3em;
+    padding-bottom: 5px;
 }
 
 article dl dd {
-    font-size: 1em;
+    font-size: 1.1em;
+    padding-bottom: 10px;
 }
 
 article a, article a:visited {
