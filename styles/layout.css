@@ -33,3 +33,10 @@ nav ul li {
 	border: thin solid rgba(127,96,17,1.00);
 	border-collapse: collapse;
 }
+
+footer {
+    background-color: #0C2D48;
+    color: #BFD7ED;
+    text-align: center;
+    padding: 5px;
+}
