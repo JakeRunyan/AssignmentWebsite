@@ -20,3 +20,34 @@ footer {
     line-height: 30px;
     color: white
 }
+
+nav ul li {
+	display: table-cell;
+	width: 15%;
+	text-align: center;
+	margin-right: 2%;
+	border: thin solid rgba(127,96,17,1.00);
+	border-collapse: collapse;
+}
+nav {
+	display: table;
+	width: 98%;
+	margin: 0 auto;
+	float: none;
+}
+nav ul {
+	display: table-row;
+	margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    display: block;
+}
+
+nav a:hover {
+    color: white;
+    background-color: green;
+}
