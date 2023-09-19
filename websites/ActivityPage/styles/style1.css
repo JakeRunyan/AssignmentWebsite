@@ -1,13 +1,16 @@
 @charset "utf-8";
 
-aside {
-    float: right;
-    width: 45%;
-    padding: 0px 10px;
-}
-
 section {
     float: left;
     width: 50%;
     margin-left: 10px;
 }
+
+aside {
+    float: right;
+    width: 35%;
+    padding: 0px 10px;
+    background-color: lightgray;
+    margin-top: 5px;
+}
+
