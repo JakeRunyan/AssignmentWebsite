@@ -2,15 +2,15 @@
 
 section {
     float: left;
-    width: 50%;
+    width: 30%;
     margin-left: 10px;
 }
 
 aside {
+    clear: right;
     float: right;
     width: 35%;
     padding: 0px 10px;
     background-color: lightgray;
     margin-top: 5px;
 }
-
