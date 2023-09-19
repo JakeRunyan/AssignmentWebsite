@@ -10,6 +10,7 @@
         <meta name="keywords" content="Story" />
         <title>Activity Page</title>
         <link href="styles/layout.css" rel="stylesheet" />
+        <link href="styles/schedule.css" rel="stylesheet" />
     </head>
 
     <body>
@@ -19,6 +20,10 @@
 
         <table class="schedule">
             <caption>Schedule</caption>
+            <colgroup>
+                <col class="time" />
+                <col class="Day" span="7" />
+            </colgroup>
             <thead>
                 <tr>
                     <th>Time</th>
@@ -41,18 +46,31 @@
                 
                 <tr>
                    <th>8:00 AM</th>
+                   <td>Morning Fortnite</td>
+                   <td>Get ready</td>
+                   <td colspan="5">Morning Fortnite</td>
                 </tr>
  
                 <tr>
                    <th>9:00 AM</th>
+                   <td>Get ready</td>
+                   <td rowspan="10">Work</td>
+                   <td colspan="4">Get ready</td>
+                   <td rowspan="2">Homework</td>
                 </tr>
  
                 <tr>
                    <th>10:00 AM</th>
+                   <td>Homework</td>
+                   <td>Homework</td>
+                   <td rowspan="9" colspan="3">Work</td>
                 </tr>
  
                 <tr>
                    <th>11:00 AM</th>
+                   <td rowspan="3">Travel and attend class</td>
+                   <td rowspan="3">Travel and attend class</td>
+                   <td rowspan="4">Get Ready for church and attend</td>
                 </tr>
 
                 <tr>
@@ -65,10 +83,13 @@
 
                 <tr>
                     <th>2:00 PM</th>
+                    <td rowspan="5">Homework</td>
+                    <td rowspan="5">Homework</td>
                  </tr>
 
                  <tr>
                     <th>3:00 PM</th>
+                    <td rowspan="4">Homework</td>
                  </tr>
 
                  <tr>
@@ -85,6 +106,7 @@
 
                  <tr>
                     <th>7:00 PM</th>
+                    <td colspan="7" rowspan="4">Fun time!</td>
                  </tr>
 
                  <tr>
@@ -101,6 +123,7 @@
 
                  <tr>
                     <th>11:00 PM - 5:00 AM</th>
+                    <td colspan="7">Catch some zzzzzzzzzzz's</td>
                  </tr>
              </tbody>
 

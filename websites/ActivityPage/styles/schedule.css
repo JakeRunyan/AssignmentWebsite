@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+table.schedule {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+table.schedule tr {
+    height: 25px;
+}
+
+table.schedule th, table.schedule td {
+    border: 2px solid lightgreen;
+    vertical-align: top;
+    padding: 5px;
+    width: 14.28%;
+}
+
+col.time {
+    width: 10%;
+    background-color: #1d2282;
+}
+
+col.Day {
+    background: #686cbd;
+}
+
+table.schedule thead {
+    background-color: #1d2282;
+}
+
+table.schedule tr th {
+    color: gray;
+}
+
+table.schedule tr td {
+    color: lightgray;
+}
+ 
