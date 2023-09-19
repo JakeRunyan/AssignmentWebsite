@@ -22,7 +22,8 @@ footer {
     background-color: green;
     height: 30px;
     line-height: 30px;
-    color: white
+    color: white;
+    clear: both;
 }
 
 nav ul li {
@@ -33,12 +34,14 @@ nav ul li {
 	border: thin solid rgba(127,96,17,1.00);
 	border-collapse: collapse;
 }
+
 nav {
 	display: table;
 	width: 98%;
 	margin: 0 auto;
 	float: none;
 }
+
 nav ul {
 	display: table-row;
 	margin: 0;
