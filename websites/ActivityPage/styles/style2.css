@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+section.description {
+    float: left;
+    width: 55%;
+}
+section.image {
+    float: right;
+}
+
+aside {
+    clear: right;
+    width: 30%;
+    float: left;
+    margin: 0 3px;
+    padding: 10px;
+    background-color: lightblue;
+}
