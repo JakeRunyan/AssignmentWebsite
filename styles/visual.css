@@ -55,3 +55,8 @@ aside#description {
     text-align: center;
     line-height: 22px;
 }
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(transparent, #0C2D48 20%);
+}
