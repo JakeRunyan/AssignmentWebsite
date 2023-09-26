@@ -4,3 +4,20 @@
    Author: Jake Runyan
    Date: 9/25/2023
 */
+
+body {
+    box-shadow: rgb(25, 25, 25) 20px 0px 35px,
+                rgb(25, 25, 25) -20px 0px 35px;
+}
+
+figure img {
+    border-radius: 50px;
+}
+
+div img {
+    box-shadow: rgb(71, 71, 71) 10px 10px 10px;
+}
+
+article img {
+    border-radius: 10px;
+}
