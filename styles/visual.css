@@ -21,3 +21,26 @@ div img {
 article img {
     border-radius: 10px;
 }
+
+aside {
+    perspective: 800px;
+}
+
+header img {
+    filter: brightness(.9);
+}
+
+figure {
+    transform: translateX(10px) rotateY(-10deg);
+}
+
+aside#description {
+    width: 30%;
+    margin: 20px 100px;
+    padding: 0px 10px;
+    background: radial-gradient(#0C2D48 50%, black);
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    line-height: 22px;
+}
