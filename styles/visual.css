@@ -5,6 +5,7 @@
    Date: 9/25/2023
 */
 
+/* Body Styles */
 body {
     box-shadow: rgb(25, 25, 25) 20px 0px 35px,
                 rgb(25, 25, 25) -20px 0px 35px;
@@ -12,9 +13,14 @@ body {
     background-blend-mode: saturation;
 }
 
+article h1 {
+    text-shadow: rgb(221, 221, 221) 1px 1px,
+                rgba(41, 41, 41, .8) 5px 5px 20px;
+}
+
+/* Image Styles */
 figure img {
     border-radius: 50px;
-    
 }
 
 div img {
@@ -38,6 +44,7 @@ figure {
     transform: translateX(10px) rotateY(-10deg);
 }
 
+/* Description Styles */
 aside#description {
     width: 30%;
     margin: 20px 100px;
