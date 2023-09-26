@@ -8,10 +8,13 @@
 body {
     box-shadow: rgb(25, 25, 25) 20px 0px 35px,
                 rgb(25, 25, 25) -20px 0px 35px;
+    background: url(../images/back.png) 100% / cover no-repeat;
+    background-blend-mode: saturation;
 }
 
 figure img {
     border-radius: 50px;
+    
 }
 
 div img {
@@ -20,6 +23,7 @@ div img {
 
 article img {
     border-radius: 10px;
+    filter: saturate(.8);
 }
 
 aside {
