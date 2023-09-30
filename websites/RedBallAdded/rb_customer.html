@@ -48,11 +48,11 @@
       <form action="http://www.example.com/redball/customer" method="POST">
          <div>
             <label for="nameBox">Name*</label>
-            <input id="nameBox" name="custName" placeholder="First and Last Name" required />
+            <input id="nameBox" name="custName" type="text" placeholder="First and Last Name" required />
          </div>
          <div>
             <label for="phoneBox">Phone*</label>
-            <input id="phoneBox" name="custPhone" placeholder="(nnn) nnn-nnnn" pattern="\d{10}$|̂(\ (\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required />
+            <input id="phoneBox" name="custPhone" type="tel" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required />
          </div>
          <div>
             <input name="orderType" id="delivery" type="radio" />
