@@ -16,6 +16,9 @@
    <title>Red Ball Pizza Customer Form</title>
    <link href="styles/rb_base.css" rel="stylesheet" />
    <link href="styles/rb_styles2.css" rel="stylesheet" />
+   <link href="styles/rb_forms2.css" rel="stylesheet" />
+   <link href="styles/rb_validate.css" rel="stylesheet" />
+   <script src="scripts/rb_formsubmit2.js"></script>
 </head>
 
 <body>
@@ -42,7 +45,41 @@
          want to place your order over the phone, call us at
          <a href="tel:+13865957499">(386) 555-7499</a>.</p>
          
+      <form action="http://www.example.com/redball/customer" method="POST">
+         <div>
+            <label for="nameBox">Name*</label>
+            <input id="nameBox" name="custName" placeholder="First and Last Name" required />
+         </div>
+         <div>
+            <label for="phoneBox">Phone*</label>
+            <input id="phoneBox" name="custPhone" placeholder="(nnn) nnn-nnnn" pattern="\d{10}$|̂(\ (\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required />
+         </div>
+         <div>
+            <input name="orderType" id="delivery" type="radio" />
+            <label for="delivery">Delivery</label>
+            
+            <input name="orderType" id="pickup" type="radio" />
+            <label for="pickup">Pickup</label>
+         </div>
+
          
+         <fieldset id="deliveryInfo">
+            <legend>Delivery Options</legend>
+            <input id="addressBox" name="delAddress" type="text" placeholder="Enter Delivery Address"/>
+            <label for="delBox">Delivery Time (leave blank for earliest delivery)</label>
+            <input id="delBox" name="delTime" type="time" />
+         </fieldset>
+
+         <fieldset id="pickupInfo">
+            <legend>Pickup Options</legend>
+            <label for="pickupTime">Pickup Time (leave blank for earliest pickup)</label>
+            <input id="pickupBox" name="pickupTime" type="time" disabled />
+         </fieldset>
+
+         <div id="button">
+            <input value="Begin Building your Order" type="submit" />
+         </div>
+      </form>
    </section>
 
    <footer>
