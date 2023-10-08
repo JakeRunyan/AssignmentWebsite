@@ -8,7 +8,7 @@ form {
 form > fieldset {
     -webkit-flex: 1 1 300px;
     flex: 1 1 300px;
-    background-color: rgb(241, 232, 181);
+    background-color: #a2fab1;
     border-radius: 20px;
     font-size: .85em;
     padding: 10px;
