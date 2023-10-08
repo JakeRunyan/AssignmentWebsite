@@ -36,3 +36,12 @@ div#button {
     text-align: center;
     width: 100%;
 }
+
+div#formRow > fieldset > legend {
+    font-size: 1.0em;
+    opacity: .7;
+}
+
+div#formRow > fieldset > label {
+    margin-left: 15px;
+}
