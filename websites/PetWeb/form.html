@@ -11,7 +11,7 @@
         <title>Pet Competition Web Form</title>
         <link href="styles/layout.css" rel="stylesheet" />
         <link href="styles/forms.css" rel="stylesheet" />
-        <script src="scripts/rb_formsubmit2.js"></script>
+        <script src="scripts/form.js"></script>
     </head>
 
     <body>
@@ -108,7 +108,20 @@
                     </div>
                 </fieldset>
 
-                <fieldset></fieldset>
+                <fieldset id="boarding">
+                    <legend>Boarding</legend>
+                    <div id="formRow">
+                        <label for="numOfDays">Number of boarding days</label>
+                        <input id="numOfDays" name="DaysOfBoarding" type="number" min="0" max="3" />
+                    </div>
+
+                    <div id="formRow">
+                        <label for="kennelSize">Size of Kennel</label>
+                        0
+                        <input id="kennelSize" name="KennelSize" type="range" min="0" max="48" step="8" />
+                        10
+                    </div>
+                </fieldset>
 
                     <div id="button">
                         <input value="Submit" type="submit" />
