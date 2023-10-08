@@ -11,6 +11,7 @@
         <title>Pet Competition Web Form</title>
         <link href="styles/layout.css" rel="stylesheet" />
         <link href="styles/forms.css" rel="stylesheet" />
+        <script src="scripts/rb_formsubmit2.js"></script>
     </head>
 
     <body>
@@ -23,8 +24,8 @@
                 <fieldset id="PetInfo">
                     <legend>Pet Information</legend>
                     <div id="formRow">
-                        <label for="nameBox">Name</label>
-                        <input id="nameBox" name="Name" type="text" required />
+                        <label for="petName">Name</label>
+                        <input id="petName" name="petName" type="text" required />
                     </div>
 
                     <div id="formRow">
@@ -47,22 +48,67 @@
                             <input id="Rodent" name="PetType" type="radio" />
                         </fieldset>
                     </div>
+
+                    <div id="formRow">
+                        <label>Enter in a short biography of the pet</label>
+                        <textarea></textarea>
+                    </div>
                 </fieldset>
 
                 <fieldset id="contactInfo">
                     <legend>Contact Information</legend>
+
+                    <div id="formRow">
+                        <label for="name">Name</label>
+                        <input id="name" name="PersonName" type="text" />
+                    </div>
+
+                    <div id="formRow">
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" name="PhoneNumber" type="tel" />
+                    </div>
+
+                    <div id="formRow">
+                        <label for="mail">Email Address</label>
+                        <input id="mail" name="Email" type="email" />
+                    </div>
+                </fieldset>
+
+                <fieldset id="compEntry">
+                    <div id="formRow">
+                    <legend>Competition Entry</legend>
+                        <fieldset>
+                            <legend>Type</legend>
+                            <label for="sing">Singing Pet</label>
+                            <input id="sing" name="PetType" type="checkbox" />
+                            <label for="cute">Cutest Pet</label>
+                            <input id="cute" name="PetType" type="checkbox" />
+                            <label for="tricks">Pet Tricks</label>
+                            <input id="tricks" name="PetType" type="checkbox" />
+                        </fieldset>
+                    </div>
+
+                    <div id="formRow">
+                        <label for="entryName">Name of the Entry</label>
+                        <input id="entryName" name="EntryName" type="text" />
+                    </div>
+
                     <div id="formRow">
                         <fieldset>
-                            <legend>Competition</legend>
-                            <label for="sing">Singing Pet</label>
-                            <input id="sing" name="Singing" type="checkbox" />
-                            <label for="cute">Cutest Pet</label>
-                            <input id="cute" name="Cutest" type="checkbox" />
-                            <label for="tricks">Pet Tricks</label>
-                            <input id="tricks" name="Tricks" type="checkbox" />
+                            <legend>Tricks</legend>
+                            <label for="course">Obstacle Course</label>
+                            <input id="course" name="trickType" type="checkbox" disabled />
+                            <label for="catch">Frisbee/Ball/Other Catching</label>
+                            <input id="catch" name="trickType" type="checkbox" disabled />
+                            <label for="roll">Roll Over/Play Dead</label>
+                            <input id="roll" name="trickType" type="checkbox" disabled />
+                            <label for="otherTrick">Other</label>
+                            <input id="otherTrick" name="trickType" type="checkbox" disabled />
                         </fieldset>
                     </div>
                 </fieldset>
+
+                <fieldset></fieldset>
 
                     <div id="button">
                         <input value="Submit" type="submit" />

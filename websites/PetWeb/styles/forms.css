@@ -45,3 +45,7 @@ div#formRow > fieldset > legend {
 div#formRow > fieldset > label {
     margin-left: 15px;
 }
+
+textarea {
+    margin-left: 20px;
+}
