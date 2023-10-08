@@ -26,6 +26,7 @@ div#formRow {
 legend {
     padding: 0px 5px;
     font-size: 1.2em;
+    font-style: italic;
 }
 
 label {
@@ -49,4 +50,9 @@ div#formRow > fieldset > label {
 
 textarea {
     margin-left: 20px;
+}
+
+fieldset#contactInfo {
+    box-shadow: lightgray 10px 10px 10px,
+                lightgray -10px -10px 10px;
 }

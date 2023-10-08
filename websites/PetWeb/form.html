@@ -16,7 +16,7 @@
 
     <body>
         <header>
-            
+            <img src="images/Pet.jpg" alt="Picture of pets" />
         </header>
         <section>
             <form name="PetForm" action="https://icarus.cs.weber.edu/~linda/cs2350/submit.php" method="POST">
@@ -25,7 +25,7 @@
                     <legend>Pet Information</legend>
                     <div id="formRow">
                         <label for="petName">Name</label>
-                        <input id="petName" name="petName" type="text" required />
+                        <input id="petName" name="petName" type="text" />
                     </div>
 
                     <div id="formRow">
@@ -59,18 +59,18 @@
                     <legend>Contact Information</legend>
 
                     <div id="formRow">
-                        <label for="name">Name</label>
-                        <input id="name" name="PersonName" type="text" />
+                        <label for="name">Owner Name*</label>
+                        <input id="name" name="PersonName" type="text" required />
                     </div>
 
                     <div id="formRow">
-                        <label for="phone">Phone Number</label>
-                        <input id="phone" name="PhoneNumber" type="tel" />
+                        <label for="phone">Phone Number*</label>
+                        <input id="phone" name="PhoneNumber" type="tel" pattern="^\d{10}$|^(d3\s*)?\d{3}[\s-]?\d{4}$" required />
                     </div>
 
                     <div id="formRow">
-                        <label for="mail">Email Address</label>
-                        <input id="mail" name="Email" type="email" />
+                        <label for="mail">Email Address*</label>
+                        <input id="mail" name="Email" type="email" required />
                     </div>
                 </fieldset>
 
@@ -119,7 +119,7 @@
                         <label for="kennelSize">Size of Kennel (in inches)</label>
                         0
                         <input id="kennelSize" name="KennelSize" type="range" min="0" max="48" step="8" />
-                        10
+                        48
                     </div>
                 </fieldset>
 
