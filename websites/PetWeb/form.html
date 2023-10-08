@@ -9,6 +9,8 @@
         <meta charset="utf-8" />
         <meta name="keywords" content="Pet" />
         <title>Pet Competition Web Form</title>
+        <link href="styles/layout.css" rel="stylesheet" />
+        <link href="styles/forms.css" rel="stylesheet" />
     </head>
 
     <body>
@@ -17,11 +19,45 @@
         </header>
         <section>
             <form name="PetForm" action="https://icarus.cs.weber.edu/~linda/cs2350/submit.php" method="POST">
+                
+                <fieldset id="PetInfo">
+                    <legend>Pet Information</legend>
+                    <div id="formRow">
+                        <label for="nameBox">Name*</label>
+                        <input id="nameBox" name="Name" type="text" required />
+                    </div>
 
-                <div id="button">
-                    <input value="Submit" type="submit" />
-                    <input value="Reset" type="reset" />
-                 </div>
+                    <div id="formRow">
+                        <label id="birthBox">Birthdate</label>
+                        <input id="birthBox" name="Birthdate" type="text" />
+                    </div>
+
+                    <div id="formRow">
+                        <label id="petType">Pet Type</label>
+                        <input id="petType" name="PetType" type="radio" />
+                    
+                    </div>
+                </fieldset>
+
+                <fieldset id="contactInfo">
+                    <legend>Contact Information</legend>
+                    <div id="formRow">
+                        <fieldset>
+                            <legend>Competition</legend>
+                            <label>Singing Pet</label>
+                            <input id="comp" name="Singing" type="checkbox" />
+                            <label>Cutest Pet</label>
+                            <input id="comp" name="Cutest" type="checkbox" />
+                            <label>Pet Tricks</label>
+                            <input id="comp" name="Tricks" type="checkbox" />
+                        </fieldset>
+                    </div>
+                </fieldset>
+
+                    <div id="button">
+                        <input value="Submit" type="submit" />
+                        <input value="Reset" type="reset" />
+                    </div>
             </form>
         </section>
 
