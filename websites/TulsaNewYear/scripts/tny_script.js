@@ -1,3 +1,5 @@
+"use strict";
+
 /*
    Countdown Clock
    Author: Jake Runyan
@@ -5,3 +7,4 @@
 
 */
 
+window.alert("Welcome to Tulsa");
