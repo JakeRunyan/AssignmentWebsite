@@ -7,7 +7,7 @@
 
 */
 
-//window.alert("Welcome to Tulsa");
+window.alert("Welcome to Tulsa");
 
 setInterval(runClock, 1000);
 
