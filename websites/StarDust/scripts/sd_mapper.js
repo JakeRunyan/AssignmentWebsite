@@ -1,8 +1,7 @@
 /*
 
    Planisphere Script
-   Author: 
-   Date:   
-
+   Author: Jake Runyan
+   Date: 11/2/23
 */
 
