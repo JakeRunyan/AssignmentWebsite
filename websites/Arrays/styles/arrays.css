@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+section {
+    float: left;
+    padding: 10px;
+    width: 30%;
+    border: 3px solid green;
+    border-radius: 10px;
+    box-shadow: inset gray 0px 0px 25px;
+}
+
+footer {
+    clear: both;
+}
+
+body {
+    background-color: lightblue;
+    font-size: 1.1em;
+}
