@@ -20,32 +20,42 @@
    startUp()
       Run when the web page is loaded; displays puzzle 1
       and loads the event handlers for the web page buttons.
-      
+   */
+  window.init; 
+  
+   function init() {
+
+   }
+   /*
    setupPuzzle()
       Sets up a new puzzle, adding the event handlers for
       every puzzle cell.      
-
+   */
+   /*
    switchPuzzle(e)
       Swaps one puzzle for another based on the button being clicked
       by the user. Confirms the change before swapping in the
       new puzzle.
-
+   */
+   /*
    findErrors()
       Highlights the errors in the Hitori puzzle in a red font.
-      
+   */
+   /*   
    showSolution()
       Shows the solution to the Hitori puzzle
-    
+   */
+   /* 
    checkSolution()
       Checks the current user's puzzle to verify whether it contains
       the complete and correct solution.
-
+   */
+   /*
    drawHitori(numbers, blocks, rating)
       Returns a text string of the HTML code to
       display a Hitori puzzle table based on the contents of
       the numbers, blocks, and rating parameters.
-	
-*/
+	*/
 
 
 
