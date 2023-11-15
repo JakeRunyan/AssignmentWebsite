@@ -25,7 +25,7 @@
 */
 window.addEventListener("load", makeOutline);
 
-function makeOutLine() {
+function makeOutline() {
    // Location of the document outline
    var outline = document.getElementById("outline");
 
