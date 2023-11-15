@@ -2,8 +2,8 @@
 
 /*
 
-   Author: 
-   Date:   
+   Author: Jake Runyan
+   Date:   11/14
 
    Filename: bc_outline.js
 
@@ -23,4 +23,20 @@
 
 
 */
+window.addEventListener("load", makeOutline);
 
+function makeOutLine() {
+   // Location of the document outline
+   var outline = document.getElementById("outline");
+
+   // source of document
+   var source = document.getElementById("doc");
+
+   var mainHeading = document.createElement("h1");
+   var outlineList = document.createElement("ol");
+   var headingText = document.createTextNode("Outline");
+
+   mainHeading.appendChild(headingText);
+   outline.appendChild(mainHeading);
+   outline.appendChild(outlineList);
+}
