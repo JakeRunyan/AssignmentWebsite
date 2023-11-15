@@ -58,10 +58,15 @@ function createList(source, outlineList) {
 
          headNum++;
          if (n.hasAttribute("id") === false)
-            n.setAttribute("id", "head", headNum);
+            n.setAttribute("id", "head" + headNum);
 
          var listElem = document.createElement("li");
-         listElem.innerHTML = n.firstChild.nodeValue;
+         var linkElem = document.createElement("a");
+         linkElem.innerHTML = n.innerHTML;
+         linkElem.setAttribute("href", "#" + n.id);
+
+         // Apend the hypertext link to the list item
+         listElem.appendChild(linkElem);
 
          if(headLevel === prevLevel) {
             // Append the list item to the current list
