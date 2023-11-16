@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/*
+    Author: Jake Runyan
+    Date: 11/16
+*/
+
+body {
+    background-color: lightblue;
+}
+
+li {
+    margin-left: 15px;
+}
