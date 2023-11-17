@@ -7,8 +7,5 @@
 
 body {
     background-color: lightblue;
-}
-
-li {
-    margin-left: 15px;
+    font-size: 1.2em;
 }
