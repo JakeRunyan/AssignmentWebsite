@@ -16,7 +16,40 @@ ol:nth-of-type(2) {
     list-style-type: circle;
 }
 
-aside {
+aside#side {
     float: right;
     margin-right: 50px;
+}
+
+nav {
+	display: table;
+	width: 98%;
+	margin: 0 auto;
+	float: none;
+    font-family: serif;
+}
+
+nav ul {
+	display: table-row;
+	margin: 0;
+}
+
+nav ul li {
+	display: table-cell;
+	width: 15%;
+	text-align: center;
+	margin-right: 2%;
+	border: thin solid rgba(127,96,17,1.00);
+	border-collapse: collapse;
+}
+
+nav ul li a, nav ul li a:visited {
+    font-size: 1.2em;
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+
+nav ul li a:active, nav ul li a:hover {
+    background-color: #71d1ea;
 }

@@ -20,7 +20,7 @@ function init() {
     favElem.appendChild(nestedList);
     
     // Create an array that contains all of my favorite things and print them all into a list
-    var favs = ["Erin (my wife)", "Coding", "Learning", "My brother", "Video games"];
+    var favs = ["Erin (my wife)", "Coding", "Learning", "My brothers", "Video games"];
     var favGames = ["Minecraft", "Call of Duty", "Fortnite", "Remnant"];
 
     // Print the favs list
