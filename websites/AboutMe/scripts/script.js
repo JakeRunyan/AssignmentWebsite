@@ -41,7 +41,7 @@ function init() {
     }
     favElem.appendChild(doubleNestedList);
 
-    // Mess with images
+    // Adding one of three different photos to an aside method
     var aside = document.getElementById("side");
     var imgElem = document.createElement("img");
     imgElem.src = "images/me" + Math.ceil(Math.random() * 3) + ".jpg";
