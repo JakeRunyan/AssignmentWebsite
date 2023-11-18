@@ -7,6 +7,9 @@
 
 window.addEventListener("load", init);
 
+// Creating a global image element
+var imgElem = document.createElement("img");
+
 function init() {
     // Adding the font style, my nickname and hometown
     document.body.setAttribute("style", "font-family: Arial, sans-serif");
@@ -41,10 +44,27 @@ function init() {
     }
     favElem.appendChild(doubleNestedList);
 
-    // Adding one of three different photos to an aside method
+    
+    // Adding one photo to an aside method
     var aside = document.getElementById("side");
-    var imgElem = document.createElement("img");
-    imgElem.src = "images/me" + Math.ceil(Math.random() * 3) + ".jpg";
-
+    imgElem.src = "images/me1.jpg";
     aside.appendChild(imgElem);
+
+    // Creating an image map and adding it to the image
+    var map = document.createElement("map");
+    map.setAttribute("name", "imgMap");
+    var area = document.createElement("area");
+    area.setAttribute("shape", "rect");
+    area.setAttribute("coords", "0, 0, 400, 600");
+    area.setAttribute("href", "");
+    map.appendChild(area);
+    document.body.appendChild(map);
+    imgElem.setAttribute("usemap", "#imgMap");
+
+    // Adding event listener for the map
+    map.addEventListener("click", ChangePic());
+}
+
+function ChangePic() {
+    imgElem.src = "images/me" + Math.ceil(Math.random() * 3) + ".jpg";
 }
