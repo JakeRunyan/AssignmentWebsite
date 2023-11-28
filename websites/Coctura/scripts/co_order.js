@@ -73,8 +73,7 @@ function calcOrder() {
    orderForm.elements.totalCost.value = formatUSCurrency(totalCost);
 
    // store the text details into the hidden field
-   orderForm.elements.modelName.value = orderForm.elements.model.options[mIndex].value;
-
+   orderForm.elements.modelName.value = orderForm.elements.model.options[mIndex].text;
    orderForm.elements.protectionName.value = document.querySelector('input[name="protection"]:checked').nextSibling.nodeValue;
 }
 
