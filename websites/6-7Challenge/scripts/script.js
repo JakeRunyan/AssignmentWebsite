@@ -30,6 +30,17 @@ function weight() {
 }
 
 /**
+ * totalCost()
+ * This calculates the total cost.
+ */
+function totalCost() {
+    calcBoardCost();
+    calcRegistrationCost();
+    var cost = document.getElementById("totalCost").value;
+    document.getElementById("totalCost").value = formatNumber(cost, 2);
+}
+
+/**
  * calcBoardCost()
  * Determines the cost by getting the value for Days of Boarding
  */
@@ -48,11 +59,11 @@ function calcBoardCost() {
     }
 }
 
-function totalCost() {
-    calcBoardCost();
-    calc
-    var cost = document.getElementById("totalCost").value;
-    document.getElementById("totalCost").value = formatNumber(cost, 2);
+/**
+ * 
+ */
+function calcRegistrationCost() {
+
 }
 
 /**
