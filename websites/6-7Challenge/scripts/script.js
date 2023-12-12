@@ -7,7 +7,13 @@
 window.addEventListener("load", function() {
     document.getElementById("weight").oninput = weight;
     document.getElementById("days").onchange = totalCost;
-    document.getElementById("sing").onchange = checkbox(document.getElementById("sing").value);
+
+    document.getElementById("singAdd").style.display = "none";
+    document.getElementById("sing").onchange = checkboxS;
+    document.getElementById("cuteAdd").style.display = "none";
+    document.getElementById("cute").onchange = checkboxC;
+    document.getElementById("trickAdd").style.display = "none";
+    document.getElementById("trick").onchange = checkboxT;
 });
 
 
@@ -35,8 +41,22 @@ function weight() {
  */
 function totalCost() {
     calcBoardCost();
-    calcRegistrationCost();
-    var cost = document.getElementById("totalCost").value;
+    var cost = "0.00";
+    var board = document.getElementById("boardingCost");
+    var reg = calcRegistrationCost();
+
+    // If board doesn't contain a value
+    if (board != null) {
+        // If reg doesn't contain a value
+        if (reg != null)
+            cost = int(board.value) + int(reg.value);
+        else
+            cost = board.value;
+    }
+    // If reg doesn't contain a value
+    else if (reg != null)
+        cost = reg.value;
+    
     document.getElementById("totalCost").value = formatNumber(cost, 2);
 }
 
@@ -57,13 +77,17 @@ function calcBoardCost() {
         document.getElementById("boardingFee").value = "0.00";
         document.getElementById("boardingCost").value = "0.00";
     }
+    return document.getElementById("boardingCost").value;
 }
 
 /**
- * 
+ * calcRegistrationCost()
+ * This calculates the total cost of registration
  */
 function calcRegistrationCost() {
-
+    var boxes = document.querySelectorAll("input[type='checkbox']:checked");
+    var count = boxes.length;
+    document.getElementById("registrationCost").value = formatNumber(count * 120 ,2);
 }
 
 /**
@@ -78,10 +102,46 @@ function formatNumber(val, decimals) {
  }
 
  /**
-  * checkbox()
+  * checkboxS()
   * This method hides or shows the different checkbox divs
-  * @param {True or false} object 
   */
- function checkbox(object) {
-    document.getElementById("singTitle").value = object;
+ function checkboxS() {
+    calcRegistrationCost();
+    var checkBox = document.getElementById("sing");
+    var div = document.getElementById("singAdd");
+
+    if (checkBox.checked)
+        div.style.display = "block";
+    else
+        div.style.display = "none";
+ }
+
+  /**
+  * checkboxC()
+  * This method hides or shows the different checkbox divs
+  */
+  function checkboxC() {
+    calcRegistrationCost();
+    var checkBox = document.getElementById("cute");
+    var div = document.getElementById("cuteAdd");
+
+    if (checkBox.checked)
+        div.style.display = "block";
+    else
+        div.style.display = "none";
+ }
+
+  /**
+  * checkboxT()
+  * This method hides or shows the different checkbox divs
+  */
+  function checkboxT() {
+    calcRegistrationCost();
+    var checkBox = document.getElementById("trick");
+    var div = document.getElementById("trickAdd");
+
+    if (checkBox.checked)
+        div.style.display = "block";
+    else
+        div.style.display = "none";
  }
