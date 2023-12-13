@@ -4,3 +4,9 @@
     7-1 Challenge: JavaScript Final
     Style sheet to make the Match Game look nice
 */
+
+body {
+    text-align: center;
+    margin: auto;
+    background-color: #cfe1ff;
+}
